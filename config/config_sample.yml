@@ -1,0 +1,6 @@
+development:
+  twitter:
+    api_key: a
+    api_secret: b
+    access_token: c
+    access_token_secret: d

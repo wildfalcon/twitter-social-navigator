@@ -7,6 +7,8 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module TwitterSocialNavigator
+  Config = YAML.load_file(File.expand_path('../config.yml', __FILE__))[Rails.env]
+
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
